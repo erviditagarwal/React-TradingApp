@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import Home from './src/screens/Home';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Finally Createt React app</Text>
-      <StatusBar style="auto" />
+    <View style={styles.mainContainer}>
+     <View style={styles.homeTop}>
+        {/* <Image 
+          style={styles.headerImage} 
+          source={require("./assets/splashh.png")}
+        /> */}
+        <Text style={styles.mainHeader}>Welcome To NewTrading App</Text>
+     </View>
+
     </View>
   );
 }
@@ -13,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'grey',
     alignItems: 'center',
     justifyContent: 'center',
   },
