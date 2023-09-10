@@ -4,16 +4,12 @@ import Home from './src/screens/Home';
 
 export default function App() {
   return (
-    <View style={styles.mainContainer}>
-     <View style={styles.homeTop}>
-        {/* <Image 
-          style={styles.headerImage} 
-          source={require("./assets/splashh.png")}
-        /> */}
-        <Text style={styles.mainHeader}>Welcome To NewTrading App</Text>
-     </View>
+    
+     
+        <Home/>
+    
 
-    </View>
+   
   );
 }
 
